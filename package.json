@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "bs58": "^4.0.1",
-    "cryptojs": "^2.5.3"
+    "cryptojs": "^2.5.3",
+    "eccrypto": "^1.1.5"
   }
 }
