@@ -3,10 +3,11 @@ const ec = require("eccrypto");
 
 const generatePrivateKey = require("./generatePrivateKey");
 
-const privateKey = generatePrivateKey();
+module.exports = function generatePublicKey() {
+  const privateKey = generatePrivateKey();
 
-const publicKey = ec.getPublic(
-  Buffer.from(cryptoJS.util.hexToBytes(privateKey))
-);
-
-console.log(cryptoJS.util.bytesToHex(publicKey));
+  const publicKey = ec.getPublic(
+    Buffer.from(cryptoJS.util.hexToBytes(privateKey))
+  );
+  return cryptoJS.util.bytesToHex(publicKey);
+};
