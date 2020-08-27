@@ -1,7 +1,9 @@
 const cryptoJS = require("cryptojs").Crypto;
 
-const privateKey = cryptoJS.util.randomBytes(32);
+module.exports = function GeneratePrivateKey() {
+  const privateKey = cryptoJS.util.randomBytes(32);
 
-const privateKeyHex = cryptoJS.util.bytesToHex(privateKey);
+  const privateKeyHex = cryptoJS.util.bytesToHex(privateKey);
 
-console.log(privateKeyHex);
+  return privateKeyHex;
+};
