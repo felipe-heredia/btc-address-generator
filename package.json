@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Felipe Suri <felipeheredia1234@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "bitcoinjs-lib": "^5.1.10",
     "bs58": "^4.0.1",
