@@ -5,6 +5,7 @@
   "author": "Felipe Suri <felipeheredia1234@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bs58": "^4.0.1",
     "cryptojs": "^2.5.3"
   }
 }
