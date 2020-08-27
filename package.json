@@ -1,0 +1,10 @@
+{
+  "name": "address-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Felipe Suri <felipeheredia1234@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cryptojs": "^2.5.3"
+  }
+}
