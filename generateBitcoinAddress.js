@@ -2,12 +2,8 @@ const cryptoJS = require("cryptojs").Crypto;
 const bs58 = require("bs58");
 const bitcoin = require("bitcoinjs-lib");
 
-const generatePublicKey = require("./generatePublicKey");
-
-function generateBitcoinAddress() {
+module.exports = function generateBitcoinAddress(publicKey) {
   const version = "00";
-
-  const publicKey = generatePublicKey();
 
   const publicKeyBytes = cryptoJS.util.hexToBytes(publicKey);
 
@@ -29,6 +25,4 @@ function generateBitcoinAddress() {
   const address = version + cryptoJS.util.bytesToHex(hash160) + checksum;
 
   return bs58.encode(cryptoJS.util.hexToBytes(address));
-}
-
-console.log(generateBitcoinAddress());
+};
