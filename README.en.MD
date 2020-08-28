@@ -1,5 +1,7 @@
 # Bitcoin address generator
 
+[Ler em português](https://github.com/felipesuri/btc-address-generator/blob/main/README.MD)
+
 This project is a simple bitcoin address generator.
 
 It does not generate an address on the blackchain. This project is only for didactic purposes to learn how addresses are generated.

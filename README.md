@@ -1,5 +1,7 @@
 # Gerador de endereços bitcoin
 
+[Read in english](https://github.com/felipesuri/btc-address-generator/blob/main/README.en.MD)
+
 Este é um simples gerador de endereços bitcoin.
 
 Ele não gera um endereço no blackchain. Este projeto é apenas para fins didáticos para aprender como são gerados endereços.
